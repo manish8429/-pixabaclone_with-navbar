@@ -8,7 +8,7 @@ const UseState = (props) => {
   useEffect(() => {
     const fetchData = async () => {
       const api = await fetch(
-        `https://pixabay.com/api/?key=45702043-be926abff24b3f3b34186324a&q=${quary}&image_type=photo&pretty=true&per_page=100`
+        `https://pixabay.com/api/?key=45702043-be926abff24b3f3b34186324a&q=${quary}&image_type=photo&pretty=true&per_page=5`
       );
       const data = await api.json();
       // console.log(data.hits);
@@ -19,7 +19,7 @@ const UseState = (props) => {
 
   const fetchData = async (cat) => {
     const api = await fetch(
-      `https://pixabay.com/api/?key=45702043-be926abff24b3f3b34186324a&q=${cat}&image_type=photo&pretty=true&per_page=100`
+      `https://pixabay.com/api/?key=45702043-be926abff24b3f3b34186324a&q=${cat}&image_type=photo&pretty=true&per_page=5`
     );
     const data = await api.json();
     // console.log(data.hits);
